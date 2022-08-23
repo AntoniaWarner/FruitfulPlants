@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "fruitfulplants:block/blueberry_crop_stage1"
+  }
+}
