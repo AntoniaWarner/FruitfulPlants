@@ -1,5 +1,7 @@
 package com.antonia.fruitfulplants;
 
+import com.antonia.fruitfulplants.block.ModBlocks;
+import com.antonia.fruitfulplants.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,7 +22,9 @@ public class FruitfulPlants
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the commonSetup method for modloading
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
 
